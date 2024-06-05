@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basit Web Sitesi</title>
+    <style>
+        .body {
+            background-color: brown;
+        }
+
+        .header {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 10px;
+            font-size: 40px;
+            background-color: rgb(27, 26, 26);
+        }
+
+        header li a {
+            color: rgb(141, 127, 110);
+            list-style: none;
+            text-decoration: none;
+        }
+
+        #home {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    border: 5px solid;
+    border-radius: 45px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(183, 202, 164);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* İçeriği yatayda eşit dağıtır */
+}
+
+
+        #about {
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 5px solid;
+            border-radius: 45px;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(165, 137, 189);
+
+
+        }
+
+        #services {
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 1px solid;
+            border-radius: 40px;
+            margin: 5px;
+            padding: 10px;
+            background-color: rgb(214, 186, 186);
+        }
+
+        #contact {
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 3px solid;
+            border-radius: 45px;
+            background-color: rgb(202, 200, 198);
+            margin: 10px;
+        }
+
+        .social {
+            display: flex;
+            margin: 50px 10px 1000px 10px;
+            justify-content: space-around;
+
+        }
+
+        .youtube {
+            border: 1px solid rgb(179, 178, 179);
+            border-radius: 10px;
+            font-size: 30px;
+            background-color: rgb(119, 108, 88);
+            margin-left: 100px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .youtube:hover {
+            transform: translate(200px, 200px);
+        }
+
+        .youtube:hover a::after {
+            content: " hesabım yok";
+        }
+
+        .youtube a::after {
+            content: "";
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 5px;
+            border-radius: 45px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .avatar,
+        .c {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 1s ease;
+            border-radius: 1000px;
+        }
+
+        .avatar:active,
+        .c:active,
+        .html:active,
+        .javascript:active,
+        .css:active {
+            transform: rotate(180deg);
+        }
+
+        .avatar:active,
+        .c:active,
+        .html:active,
+        .javascript:active,
+        .css:active {
+            transform: rotate(1turn);
+        }
+
+
+
+        .kayan-yazi {
+            overflow: hidden;
+        }
+
+        .kayan-yazi p {
+            white-space: nowrap;
+            animation: kaydir 3s linear infinite;
+        }
+
+        @keyframes kaydir {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .c {
+            width: 340px;
+        }
+
+        .html {
+            width: 350px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 1s ease;
+            border-radius: 1000px;
+        }
+
+        .javascript {
+            width: 205px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 1s ease;
+        }
+
+        .css {
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <li><a href="#home">Anasayfa</a></li>
+        <li><a href="#about">Hakkında</a></li>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+
+
+    </header>
+
+    <section id="home">
+        <img class="avatar"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Boki-avatar.jpg/480px-Boki-avatar.jpg"
+            alt="Tarık DEMİR">
+        <div class="kayan-yazi">
+            <p>Tarık DEMİR</p>
+            <p>Full Stack Developer </p>
+        </div>
+        <div>
+            <img class="c" src="https://akademi.bilgeadam.com/wp-content/uploads/2021/11/Csharp.png" alt="">
+        </div>
+        <div>
+            <img class="html" src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="">
+        </div>
+
+        <div>
+            <img class="javascript"
+                src="https://caglarbostanci.com.tr/wp-content/uploads/2017/04/JS-caglarbostanci-com-tr.png" alt="">
+        </div>
+        <div>
+            <img class="css"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                alt="">
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>Hakkında</h2>
+        <p>Bu site hakkında bilgiler burada yer alacaktır. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Saepe eius, veritatis ipsam sint soluta debitis officia nam itaque accusantium praesentium? Corrupti rerum
+            quas numquam neque quia eius nisi vel possimus!
+            Nostrum quis quaerat provident repudiandae, totam consectetur ex animi ratione molestiae quod! Provident
+            similique, suscipit sit architecto laboriosam voluptatem doloribus aliquam dolorem exercitationem optio
+            deserunt porro dignissimos ipsa explicabo iste.
+            Vel suscipit aperiam accusamus nihil doloremque tempore, eius eveniet. Inventore a, suscipit facilis sequi
+            incidunt saepe porro eaque libero alias aliquam nobis voluptas officia voluptate dolorum illo velit debitis
+            ab!
+            Eligendi, minus? Veritatis laudantium explicabo consectetur fugit quod placeat voluptate! Corporis,
+            cupiditate ipsa quis amet, non quos nobis officiis, fuga eos commodi in repellat. Sequi vero illum minima
+            ullam veritatis?
+            Tenetur quod accusamus praesentium quas neque ipsam, dolorem repudiandae esse cupiditate cumque ipsum
+            debitis laboriosam nam perspiciatis voluptatibus laborum veniam eius nesciunt enim omnis reprehenderit cum
+            totam error veritatis! Quae.
+            Voluptas ab magnam repellendus reprehenderit, ex nihil minima quia dolorum ipsa quis vero accusamus tempora
+            dolorem est excepturi temporibus voluptatum dolor ea perferendis eum expedita? Provident atque sunt
+            voluptate consectetur.
+            Facilis voluptate odit tempora sequi similique voluptas eligendi, error numquam exercitationem corporis
+            assumenda! Distinctio, quos praesentium quidem dolore sint quasi sed vitae id asperiores doloribus quae
+            voluptatem consectetur, commodi suscipit.
+            Culpa dolorum accusamus nulla sed? Atque, delectus repellendus illum in tempore aperiam cumque ut, nisi
+            enim, excepturi temporibus repudiandae veritatis ducimus quasi dolorem quia numquam fugiat odit ad vero
+            voluptatem.
+            Neque nostrum consequatur, illo harum veritatis recusandae eius in molestiae enim iure eos ipsa non, soluta
+            ex cumque earum assumenda ea at? Vel dolorum amet culpa pariatur eligendi unde repudiandae.
+            Soluta temporibus, accusamus rem modi nulla quis id beatae numquam itaque laboriosam! Ducimus, doloremque
+            unde accusamus dolor totam similique accusantium voluptate ipsum, sapiente explicabo ea suscipit rerum a
+            beatae aperiam?</p>
+    </section>
+    <section id="services">
+        <h2>Hizmetler</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, temporibus nam facilis enim quo
+            animi ut provident officiis, totam quas id distinctio aut, minima similique reprehenderit corporis quod ab.
+            Laboriosam amet corrupti asperiores pariatur quia, obcaecati officia molestias. Asperiores ab dolores error
+            iusto vel, repudiandae tempora amet modi tenetur laborum non dicta, beatae ad nobis, quibusdam numquam
+            deleniti itaque.
+            Eligendi dolor, neque suscipit tempora esse at quas, odio enim, reprehenderit numquam officiis aperiam
+            consequatur sequi nesciunt maiores nulla unde animi incidunt recusandae qui ad quo dolorum deserunt! Quis,
+            atque.
+            Assumenda delectus nostrum inventore quidem excepturi obcaecati, nihil velit, enim nobis libero maxime
+            aliquam dolorum, ipsum nisi laboriosam! Voluptates voluptatem esse consequatur! Eos aspernatur cumque amet
+            rem iste vero quis.
+            Mollitia quod sed debitis illum atque possimus est dolorum iusto, molestias ab dicta soluta perferendis
+            nulla hic delectus quos ut laboriosam dolore eligendi vero maiores iste incidunt autem. Nam, aliquid.
+            Laborum hic officia exercitationem maxime veritatis harum vitae consequuntur corporis perferendis voluptas
+            quisquam aperiam, voluptatem pariatur animi totam nihil asperiores vero blanditiis iure? Ut recusandae
+            expedita animi, quos excepturi omnis.
+            Rerum iste ducimus molestias commodi. Nobis voluptates saepe repellendus minus dolorum. Accusantium corporis
+            beatae delectus numquam nam, vero dolorem eos velit, officiis ex distinctio veritatis explicabo adipisci
+            porro deserunt fugit.
+            Reprehenderit veritatis vero expedita nobis ea laboriosam recusandae cupiditate non, sapiente animi
+            voluptatem nam in deserunt provident magnam. Natus eius amet mollitia pariatur delectus sunt, possimus
+            corporis repellat a aperiam.
+            Iste doloremque ipsam nemo suscipit quam hic facere. Qui obcaecati dolorum, cum ratione amet impedit
+            incidunt quis natus accusantium nihil molestiae exercitationem ducimus deleniti nulla quia asperiores!
+            Labore, maiores modi?
+            Architecto neque vel ratione ducimus reiciendis fuga non labore itaque placeat suscipit, dicta inventore
+            asperiores, perspiciatis dolorem corrupti sequi! Ut, excepturi neque necessitatibus veniam dolor repellat
+            dolore voluptas mollitia cum.</p>
+    </section>
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <div class="social">
+            <div class="linkedin"><a href="https://www.linkedin.com/in/tarik-demir/" target="_blank">Linkedin</a></div>
+            <div class="youtube"><a href="">Youtube</a></div>
+            <div class="github"><a href="https://github.com/tarikdemir4" target="_blank">Github</a></div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Web Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>
