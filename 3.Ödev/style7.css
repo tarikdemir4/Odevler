@@ -84,6 +84,7 @@ nav ul li {
 .col9-main {
     width: 85%;
     float: left;
+    background-color: aqua;
 }
 .col9-blog{
 
@@ -125,6 +126,16 @@ nav ul li {
 }
 
 .button {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(13, 24, 78) 0%, rgba(252, 70, 107, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.button-blog {
     background: rgb(63, 94, 251);
     background: radial-gradient(circle, rgb(13, 24, 78) 0%, rgba(252, 70, 107, 1) 100%);
     color: #fff;
@@ -206,10 +217,43 @@ footer {
     text-decoration: underline;
 }
 
+.blog-section{
+    font-size: 15px;
+}
 
+.col9-blog .col4{
+    background-color: rgb(144, 177, 152);
+    text-align: center;
+    color: rgb(6, 7, 7);
+    padding-bottom: 30px;
+    margin: 10px;
+    width: 580px;
+    border-radius: 45px ;
+    transition: transform 0.8s ease; 
 
+}
+.col9-blog .col4:hover{
 
-
-
+    transform: scale(1.12); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(57, 189, 88); 
+}
+.col9-blog .col4 .card img {
+    width: 100px;
+    border-radius: 45px;
+}
+.col9-blog .col4 .card{
+    display: flex;
+    margin: 10px;
+    border-radius: 45px;
+}
+#metnegit{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(219, 66, 66);
+}
+#metnegit:hover{
+color:rgb(30, 27, 216) ;
+}
 
 
